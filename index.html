@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sally Student React Resume</title>
+  <meta name="description" content="Sally Student is a Full Stack Developer based in Chicago, IL. 
+  She is available for remote contract-based projects or full-time work in the Chicagoland Area. 
+  Check out her resume!">
+  <meta name="keywords" content="Full Stack Developer, Resume, Sally Student">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+    <body>
+        <div id="application-root"></div>
+    
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+    <!---- My Code Below ----->
+    <script type="text/babel">
+
+    const studentName = "Sally Student";
+
+        function App() {
+            return (
+                <div className="JSX">
+                    <header>
+                        <div id="contact-left">
+                            <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Headshot"></img>
+                            <h1>{studentName}</h1>
+                            <h2>Full Stack Designer</h2>
+                        </div>
+                        <div id="contact-right">
+                            <ul>
+                            <li><a href="tel:+17732065872">tel: 773-206-5872</a></li>
+                            <li><a href="mailto:amy@amybraswell.com?subject=Your Resume">email: Sally@SallyStudent.com</a></li>
+                            <li><a href="http://www.amybraswell.com" target="blank">web: www.SallyStudent.com</a></li>
+                            <li>address: 125 S. Racine Ave <br/>Chicago, IL 60607</li>
+                            </ul>
+                        </div> 
+                    </header> 
+
+                    <div className="sidebar">
+                        <section id="education">
+                            <h2>Education</h2>
+                            <div>
+                                <h3>Bloc</h3>
+                                <p>Full Stack Development</p>
+                                <p>2019 - 2020</p>
+                            </div>
+                            <div>
+                                <h3>Columbia College Chicago</h3>
+                                <p>Masters of Fine Arts / Photography</p>
+                                <p>(3.74 / 4.00 GPA)</p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <main>
+                        <section id="employment">
+                            <h2>Employment</h2>
+                            <div>
+                            <h3>Studio Photographer</h3>
+                            <h4>Amy Braswell Photography, Chicago, IL</h4>
+                            <h4>June 2001 - Current</h4>
+                            <ul>
+                                <li><p>Planned and prepared for all studio shoots.</p></li>
+                                <li><p>Photographed high-quality imagery for in-store, print and digital distribution.</p></li>
+                                <li><p>Collaborated with other team members to provide on-brand visuals while meeting aggressive timelines.</p></li>
+                                <li><p>Remained composed and calm in very fast-paced, stressful and constantly changing environments to provide optimal desired results.</p></li>
+                                <li><p>Developed reputation as an industry-expert through on-going research of industry trends, new techniques and software updates.</p></li>
+                            </ul>
+                            </div>
+                            <div>
+                            <h3>Adjunct Faculty</h3>
+                            <h4>Photography Department / Columbia College Chicago</h4>
+                            <h4>September 2000 – December 2016</h4>
+                            <ul>
+                                <li><p>Developed and implemented lesson plans designed to teach camera operations, tethered shooting and studio lighting.</p></li>
+                                <li><p>Engaged students by encouraging participation in class and sharing thoughts on subject under discussion.</p></li>
+                                <li><p>Proactively mentored students in the development and achievement of their professional goals.</p></li>
+                                <li><p>Was one of two adjunct faculty selected to consult full-time faculty on the industry perspective of best practices during the development of an inaugural digital curriculum for core foundational classes within the department.</p></li>
+                            </ul>
+                            </div>
+                        </section>
+                        </main>
+                </div> //end of JSX   
+            );
+        };
+
+        ReactDOM.render(
+        <App className='my-class' />,
+        document.querySelector('#application-root')
+        );
+
+      </script>
+    </body>
+</html>
